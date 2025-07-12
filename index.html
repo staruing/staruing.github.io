@@ -3,74 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>별으잉</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        
-        .container {
-            text-align: center;
-            animation: fadeIn 2s ease-in;
-        }
-        
-        .message {
-            font-size: 4rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 1rem;
-        }
-        
-        .subtitle {
-            font-size: 1.5rem;
-            opacity: 0.8;
-            margin-top: 1rem;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .star {
-            display: inline-block;
-            animation: twinkle 1.5s infinite alternate;
-        }
-        
-        @keyframes twinkle {
-            from {
-                transform: scale(1);
-                opacity: 1;
-            }
-            to {
-                transform: scale(1.2);
-                opacity: 0.7;
-            }
-        }
-    </style>
+    <title>별으잉 - 버튜버 방송</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="message">
-            <span class="star">⭐</span> 별으잉 <span class="star">⭐</span>
-        </div>
-        <div class="subtitle">
-            안녕하세요! 반갑습니다 ✨
-        </div>
+        <!-- Header -->
+        <header class="header">
+            <img src="https://via.placeholder.com/150x150/ffd700/ffffff?text=별으잉" alt="별으잉 프로필" class="profile-img">
+            <h1 class="name">별으잉 ⭐</h1>
+            <p class="tagline">즐거운 게임과 함께하는 버튜버</p>
+            
+            <nav class="nav">
+                <a href="#about" class="nav-btn">소개</a>
+                <a href="#schedule" class="nav-btn">방송일정</a>
+                <a href="#links" class="nav-btn">링크</a>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About 별으잉</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>안녕하세요! 별으잉입니다 ✨</p>
+                    <p>다양한 게임을 즐기며 여러분과 함께 웃고 떠들 수 있는 시간을 만들어가고 있어요.</p>
+                    <p>특히 인디게임과 멀티플레이어 게임을 좋아하며, 시청자분들과의 소통을 가장 중요하게 생각합니다.</p>
+                    <p>언제든지 편하게 놀러와주세요! 🌟</p>
+                </div>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <div class="info-label">프사</div>
+                        <div class="info-value">별으잉</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">종족</div>
+                        <div class="info-value">족제비</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">생일</div>
+                        <div class="info-value">1925년 1월 23일</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">방송 시작</div>
+                        <div class="info-value">2025년 6월 28일</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section">
+            <h2>방송 일정</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="schedule-day">월요일</div>
+                    <div class="schedule-time">오후 8시 ~ 10시</div>
+                    <div class="schedule-content">인디게임 탐험</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-day">수요일</div>
+                    <div class="schedule-time">오후 9시 ~ 11시</div>
+                    <div class="schedule-content">멀티플레이어 게임</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-day">금요일</div>
+                    <div class="schedule-time">오후 8시 ~ 12시</div>
+                    <div class="schedule-content">주말 특별방송</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-day">토요일</div>
+                    <div class="schedule-time">오후 2시 ~ 6시</div>
+                    <div class="schedule-content">시청자와 함께하는 게임</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section id="links" class="section">
+            <h2>링크</h2>
+            <div class="links-grid">
+                <a href="#" class="link-item">
+                    <i class="fas fa-video"></i>
+                    <div class="link-content">
+                        <div class="link-title">치지직</div>
+                        <div class="link-desc">실시간 방송</div>
+                    </div>
+                </a>
+                <a href="#" class="link-item">
+                    <i class="fab fa-discord"></i>
+                    <div class="link-content">
+                        <div class="link-title">디스코드</div>
+                        <div class="link-desc">커뮤니티</div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html> 
