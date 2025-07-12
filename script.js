@@ -9,9 +9,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Add some interactive effects
-document.querySelectorAll('.link-item').forEach(item => {
+document.querySelectorAll('.link-btn').forEach(item => {
     item.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px) scale(1.02)';
+        this.style.transform = 'translateY(-3px) scale(1.05)';
     });
     
     item.addEventListener('mouseleave', function() {
